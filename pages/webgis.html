@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Static files are imported from public folder -->
-    <link rel="stylesheet" href="../assets/css/custom-styles.css">
+    <link rel="stylesheet" href="../assets/css/custom-styles-final.css">
 
     <!-- Modules are imported normally -->
-    <script type="module" src="../assets/js/map.js"></script>
+    <script type="module" src="../assets/js/map-final.js"></script>
 </head>
 
 <body>
@@ -26,9 +26,16 @@
         <div id="map"></div>
 
         <!--Add here the popup HTML-->
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer">&times;</a>
+            <div id="popup-content"></div>
+        </div>
         
         <!--Add here the legend HTML-->
-        
+        <div id="legend" class="legend-container">
+            <span class="legend-title">Legend</span>
+            <div id="legend-content" class="legend-content"></div></div>
+        </div>
 
     </div>
 </body>
